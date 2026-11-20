@@ -1,19 +1,29 @@
-# :earth_americas: GDP dashboard template
+# 나만의 돈 관리 시장 게임
 
-A simple Streamlit app showing the GDP of different countries in the world.
+초등학교 4학년을 위한 경제 실습용 Streamlit 앱입니다. 밝은 시장 화면에서 상품 그림을 보고 낱개나 묶음을 장바구니에 담고, 합계와 거스름돈을 직접 계산한 뒤 소비와 기회비용을 돌아봅니다.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+## 실행 방법
 
-### How to run it on your own machine
+Codespaces 터미널에서 현재 제공되는 Python 환경을 그대로 사용합니다. 가상환경을 만들거나 Python 버전을 변경할 필요가 없습니다.
 
-1. Install the requirements
+필요한 패키지를 설치해야 할 때:
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+```bash
+python -m pip install -r requirements.txt
+```
 
-2. Run the app
+앱 실행:
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+```bash
+python -m streamlit run streamlit_app.py
+```
+
+## 게임 방법
+
+1. 상품 카드에서 낱개 또는 몇 개들이 묶음을 눌러 20,000원 예산 안에서 담습니다. 장바구니에서 낱개나 묶음을 뺄 수 있습니다.
+2. 상품에는 낱개 가격과 묶음 개수만 표시됩니다. 싼 상품은 묶음 수량이 많고 비싼 상품은 적어요. 묶음 가격은 직접 계산하고, 가장 아쉽게 포기한 물건도 고릅니다.
+3. 직접 계산한 합계를 입력해 정답을 맞힙니다.
+4. 20,000원을 냈을 때 받을 거스름돈을 계산합니다. 정답을 맞히면 구매가 완료됩니다.
+5. 소비 분석과 영수증을 확인합니다. 영수증은 복사해 공유하거나 파일로 내려받아 인쇄할 수 있습니다.
+
+**기회비용**은 어떤 것을 선택하면서 포기한 것 중 가장 아쉬운 대안입니다. 쓸 수 있는 돈이 정해져 있을 때 무엇을 살지 결정하면 기회비용이 생깁니다.
